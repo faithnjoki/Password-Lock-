@@ -1,12 +1,24 @@
 name = input('What is your name? ')
 print(f'Hey {name}, Welcome to Pass Locker!')
+master_pwd = input('What is you master password? ')
 
 # add functions
 def view():
     pass
-def add():
-    pass
 
+
+view()
+
+def add():
+    name = input('Account name: ')
+    pwd = input('Password: ')
+
+    # with key word closes file  automatically once its open.
+    with open('password.txt','a') as f:
+        f.write(name + '|' + pwd )
+
+
+add()
 
 
 
@@ -15,9 +27,9 @@ while True:
     if Mode== 'quit':
         break
     elif Mode == 'view':
-        pass
+        view()
     elif Mode == 'add':
-        pass
+        add()
     else:
         print('Invalid mode')
         continue
