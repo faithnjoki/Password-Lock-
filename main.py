@@ -4,7 +4,11 @@ master_pwd = input('What is you master password? ')
 
 # add functions
 def view():
-    pass
+  with open('password.txt', 'r') as f:
+      for line in f.readlines():
+          print(line)
+    
+
 
 
 view()
@@ -15,7 +19,7 @@ def add():
 
     # with key word closes file  automatically once its open.
     with open('password.txt','a') as f:
-        f.write(name + '|' + pwd )
+        f.write(name + '|' + pwd + '\n')
 
 
 add()
