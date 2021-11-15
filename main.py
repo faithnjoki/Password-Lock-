@@ -1,3 +1,7 @@
+from cryptography.fernet import Fernet
+# a module that allows encrypt text
+
+
 name = input('What is your name? ')
 print(f'Hey {name}, Welcome to Pass Locker!')
 master_pwd = input('What is you master password? ')
