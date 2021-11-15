@@ -3,11 +3,11 @@ from user import User
 
 def main():
     while True:
+
         print('Welcome to my PassWord Locker....' )
-        print('\n')
-        print('Please select a short code to navigate through the options: use nu for new user,lg for login and ex for exit: ')
+        name = input('What is your name?  ')
+        print(f'Hey , {name}, Please select a short code to navigate through the options: use nu for new user,lg for login and ex for exit: ')
         shortcode = input().lower()
-        print('\n')
         if shortcode == 'nu':
             print('Create username: ')
             createdusername = input()
@@ -26,7 +26,6 @@ def main():
                 confirmpassword = input()
             else:
                 print(f'Congatulations {createdusername}! account creation was successful')
-                print('\n')
                 print('Please, Proceede to login')
                 print('Username: ')
                 enteredusername = input()
@@ -56,11 +55,9 @@ def main():
 
                 print('Enter password: ')
                 defaultpassword = input()
-                print('\n')
+               
             else:
                 print('Login sucess')
-                print('\n')
-                print('\n')
         elif shortcode == 'ex':
             break
         else:
