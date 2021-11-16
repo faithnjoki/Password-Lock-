@@ -19,8 +19,7 @@ def main():
             lower = string.ascii_lowercase
             upper = string.ascii_uppercase
             num = string.digits
-            symbols = string.punctuation
-            all = lower + upper + num + symbols
+            all = lower + upper + num 
             temp = random.sample(all, length)
             createdpassword = "".join(temp)
             all = string.ascii_letters + string.digits + string.punctuation
@@ -75,6 +74,40 @@ def main():
             break
         else:
             print('Enter Valid code to continue')  
+
+# show passwords
+def add():
+    name = input('Account name: ')
+    pwd = input('Password: ')
+
+    # with key word closes file  automatically once its open.
+    with open('password.txt', 'a') as f:
+        f.write(name + '|' + pwd + '\n')
+
+
+add()
+
+
+def view():
+  with open('password.txt', 'r') as f:
+      for line in f.readlines():
+
+          print(line)
+
+
+view()
+# while True:
+#     Mode = input(
+#         'Woould you want to view existing passwords or create new password or quit?(View or Add or  quit) ').lower()
+#     if Mode == 'quit':
+#         break
+#     elif Mode == 'view':
+#         view()
+#     elif Mode == 'add':
+#         add()
+#     else:
+#         print('Invalid mode')
+#         continue
 
 
 if __name__ == "__main__":
