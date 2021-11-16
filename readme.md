@@ -3,9 +3,8 @@
 Helps manage our passwords and even generate new passwords.
 
 ### Behavior Driven Development
-<ol>
 Users are required to create an account after which they can successfully log into the application. Upon successful login, they can:
-
+<ol>
 <li>Create new credentials. Here users are required to provide an application name, their username for the account they have/wish to have on the said application and a password they use/would like to use for the said account. Users are also provided with the option of a generated password of which they are further allowed to select the length they desire for the password.</li>
 <li>Find credentials. Here, users can find credentials of a specific application by providing the application's name.</li>
 <li>Delete a credential. Here, users can delete credentials they don't need anymore.</li>
