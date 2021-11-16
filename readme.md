@@ -1,8 +1,8 @@
-### PassLocker
-## Description
+## PassLocker
+### Description
 Helps manage our passwords and even generate new passwords.
 
-## Behavior Driven Development
+### Behavior Driven Development
 <ol>
 Users are required to create an account after which they can successfully log into the application. Upon successful login, they can:
 
@@ -13,7 +13,7 @@ Users are required to create an account after which they can successfully log in
 <li>Users can also delete an active account.</li>
 <ol>
 
-## Run/setup instructions
+### Run/setup instructions
 <ol>
 <li>Clone the repo to your computer.</li>
 <li>Open your terminal and navigate to the project directory.</li>
@@ -22,13 +22,13 @@ Users are required to create an account after which they can successfully log in
 </ol>
 
 
-## How to Run
+### How to Run
 git clone : https://github.com/faithnjoki/Password-Lock-.git  and python3 run.py .
 
-##  Technologies Used
+### Technologies Used
 Python 3
 
-## Support and contact details
+### Support and contact details
 Have any recommendations and/or questions, feel free to email me:
 faithnjoki81@gmail.com
 
